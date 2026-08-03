@@ -1,0 +1,310 @@
+/*=======================================
+    FONTS IMPORT
+==================================================*/
+@font-face {
+  font-family: "Lato";
+  src: url("../font/Lato/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*=======================================
+    GENERAL STYLES
+==================================================*/
+:root {
+  /* colores guardados
+        boxes{
+            rgb(82, 190, 128)
+        }
+    */
+  --color-titulo: rgb(0, 152, 153);
+  --color-titulo-white: rgb(253, 253, 253);
+  --color-titulo-black: rgb(41, 41, 41);
+  --background-principal: rgb(0, 152, 153);
+  --background-secundario: #007575;
+  --background-white: rgb(254, 254, 254);
+  --background-boxes: rgb(242, 242, 242);
+  --color-hover: rgb(90, 90, 90);
+}
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", Arial, sans-serif !important;
+  font-size: 1em;
+  /*overflow-x: hidden;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Lato", Arial, sans-serif !important;
+}
+/*=======================================
+    HEADER STYLES
+==================================================*/
+.header {
+  background-color: var(--background-principal);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: relative;
+}
+.header .content-header {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .content-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-logo p {
+  color: var(--color-titulo-white);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.header .content-logo img {
+  height: 80px;
+  padding: 5px;
+}
+.linea-vertical {
+  border-left: 3px solid #fff; /* Grosor, estilo y color de la línea */
+  height: 60px; /* Altura de la línea */
+  margin: 0 10px; /* Espacio alrededor */
+}
+/** Redes sociales */
+.header .social {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  margin-bottom: 10px;
+}
+.header .social .icon {
+  padding: 7px;
+  border-radius: 5%;
+  color: var(--color-titulo-white);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #d6d3d1;
+}
+.header .social .icon i {
+  font-size: 1.2em;
+}
+/*=======================================
+    NAV STYLES
+==================================================*/
+.nav {
+  background-color: var(--background-white);
+  width: 100%;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #d6d3d1;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+.nav .content-nav {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .content-logo2 {
+  display: none;
+}
+.content-nav .abrir-nav,
+.cerrar-nav {
+  display: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.navbar .item-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1.2em;
+}
+.navbar .item-nav .nav-link {
+  list-style: none;
+  height: 100%;
+}
+.navbar .item-nav .nav-link a {
+  height: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: var(--color-hover);
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .item-nav .nav-link a:hover {
+  background-color: var(--background-principal);
+  color: var(--color-titulo-white) !important;
+}
+.active {
+  background-color: var(--background-principal);
+  color: var(--color-titulo-white) !important;
+}
+/*=======================================
+    SLIDER STYLES
+==================================================*/
+.banner {
+  background-color: var(--color-titulo-white);
+  width: 100%;
+  height: calc(100vh - 80px - 61px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .content-slider {
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.banner .content-slider .slider {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.banner .content-slider .slide-section {
+  width: calc(100% / 4);
+  height: 100%;
+}
+.slide-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.7rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 3px;
+  font-weight: 900;
+  cursor: pointer;
+  color: var(--color-titulo-white);
+  transform: translate(0, -50%);
+  transition: 0.5s ease;
+  user-select: none;
+}
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #d6d3d1;
+}
+.btn-left {
+  left: 10px;
+}
+.btn-right {
+  right: 10px;
+}
+/*=======================================
+    MEDIAQUERIS STYLES
+==================================================*/
+@media screen and (max-width: 720px) {
+  /** tablet y movil nav*/
+  #header {
+    display: none;
+  }
+  .nav .content-nav {
+    width: 90%;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-nav .content-logo2 {
+    display: block;
+    height: 100%;
+  }
+  .content-nav .content-logo2 img {
+    height: 100%;
+  }
+  .content-nav .abrir-nav {
+    display: block;
+    position: relative;
+    right: 0;
+    border: none;
+    font-size: 1.7em;
+    background-color: #fff;
+  }
+
+  .nav .navbar {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    height: 100dvh;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .navbar .item-nav {
+    height: auto;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    gap: 2em;
+  }
+  .navbar .item-nav .nav-link a {
+    padding: 10px;
+    color: var(--color-titulo-white);
+  }
+  .navbar .cerrar-nav {
+    display: block;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #1c1c1c;
+    color: var(--color-titulo-white);
+  }
+
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  /** tablet y movil slider banner*/
+  .banner {
+    align-items: start;
+  }
+  .banner .content-slider {
+    width: 100%;
+    height: 80%;
+    z-index: 0;
+  }
+}
