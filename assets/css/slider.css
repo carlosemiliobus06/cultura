@@ -1,0 +1,73 @@
+/*=======================================
+    SLIDER STYLES
+==================================================*/
+.banner {
+  background-color: var(--color-titulo-white);
+  width: 100%;
+  height: calc(100vh - 80px - 61px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .content-slider {
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.banner .content-slider .slider {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.banner .content-slider .slide-section {
+  width: calc(100% / 4);
+  height: 100%;
+}
+.slide-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.7rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 3px;
+  font-weight: 900;
+  cursor: pointer;
+  color: var(--color-titulo-white);
+  transform: translate(0, -50%);
+  transition: 0.5s ease;
+  user-select: none;
+}
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #d6d3d1;
+}
+.btn-left {
+  left: 10px;
+}
+.btn-right {
+  right: 10px;
+}
+@media screen and (max-width: 720px) {
+  /**------- tablet y movil slider banner -------*/
+  .banner {
+    width: 100%;
+    height: auto;
+    align-items: start;
+  }
+  .banner .content-slider {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+  .slide-section img {
+    object-fit: contain;
+  }
+}

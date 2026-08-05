@@ -1,4 +1,4 @@
-/** scroll encabezado */
+/** scroll encabezado 
 window.addEventListener("scroll", () => {
   posicionarmenu();
 });
@@ -13,7 +13,7 @@ function posicionarmenu() {
   } else {
     menu.classList.remove("fixed");
   }
-}
+}*/
 /** menu responsivo */
 const nav = document.querySelector("#navbar");
 const abrir = document.querySelector("#abrir");

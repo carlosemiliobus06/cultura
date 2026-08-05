@@ -18,6 +18,8 @@
     />
     <!-- GENERAL STYLE CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- SLIDER STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/slider.css" />
   </head>
   <body>
     <!-- ----- HEADER ----- -->
@@ -43,6 +45,8 @@
       <div class="content-nav">
         <div class="content-logo2">
           <img src="assets/img/LOGOS SIN FONDO2.png" alt="Logo" />
+          <div class="linea-vertical2"></div>
+          <p>PERITO MORENO</p>
         </div>
         <button id="abrir" class="abrir-nav"><i class="bi bi-list"></i></button>
         <div id="navbar" class="navbar">
@@ -50,12 +54,23 @@
             <i class="bi bi-x-lg"></i>
           </button>
           <ul class="item-nav">
-            <li class="nav-link"><a class="active" href="">INICIO</a></li>
-            <li class="nav-link"><a href="">CULTURA</a></li>
-            <li class="nav-link"><a href="">PATRIMONIO</a></li>
-            <li class="nav-link"><a href="">BIBLIOTECA</a></li>
-            <li class="nav-link"><a href="">AUDITORIO</a></li>
+            <li class="nav-link">
+              <a class="active" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-link"><a href="cultura.html">CULTURA</a></li>
+            <li class="nav-link"><a href="patrimonio.html">PATRIMONIO</a></li>
+            <li class="nav-link"><a href="biblioteca.html">BIBLIOTECA</a></li>
+            <li class="nav-link"><a href="auditorio.html">AUDITORIO</a></li>
+            <li class="nav-link"><a href="extension.html">EXTENSIÓN CULTURAL</a></li>
           </ul>
+          <div class="social2">
+            <a id="facebook" class="icon" href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a id="youtube" class="icon" href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -203,7 +218,20 @@
       </section>
       <aside></aside>
     </main>
-    <footer></footer>
+    <!-- ------- FOOTER ------- -->
+    <footer class="footer">
+      <div class="logo-footer">
+        <img src="assets/img/LOGOS BLANCOS SIN FONDO-FOOTER.png" alt="" />
+      </div>
+      <ul class="menu-footer">
+        <li><a href="cultura.html">Cultura</a></li>
+        <li><a href="patrimonio.html">Patrimonio</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+        <li><a href="auditorio.html">Auditorio</a></li>
+        <li><a href="extension.html">Extensión Cultural</a></li>
+      </ul>
+      <p class="text-footer">&#169 2026 | Todos los derechos reservados</p>
+    </footer>
 
     <!-- FONT AWESOME ICON STYLE JS -->
     <script src="assets/plugins/fontawesome-free-7.3.1-web/js/all.js"></script>

@@ -1,0 +1,115 @@
+:root {
+  /* colores guardados
+        boxes{
+            rgb(82, 190, 128)
+        }
+    */
+  --color-titulo: rgb(0, 152, 153);
+  --color-titulo-white: rgb(253, 253, 253);
+  --color-titulo-black: rgb(41, 41, 41);
+  --background-principal: rgb(0, 152, 153);
+  --background-secundario: #007575;
+  --background-white: rgb(254, 254, 254);
+  --background-boxes: rgb(242, 242, 242);
+  --color-hover: rgb(90, 90, 90);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .seccion-biblioteca {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+/**------- titulo principal -------nav*/
+.seccion-biblioteca .titulo-biblioteca {
+  text-align: center;
+  padding: 35px 0;
+  color: var(--color-hover);
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: bold;
+}
+/**------- contenido -------nav*/
+.contenido {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-principal {
+  width: 40%;
+}
+.content-texto {
+  width: 60%;
+  padding: 20px 0px 0px 30px;
+  box-sizing: border-box;
+  color: var(--color-hover);
+}
+.content-texto .titulo-texto {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.parrafo {
+  text-align: justify;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.logo-biblioteca {
+  height: 100px;
+}
+/**------- horarios -------nav*/
+.content-horario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.content-horario .horario {
+  width: 300px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a6a09b;
+  border-radius: 10px;
+  color: var(--color-hover);
+  background-color: rgba(200, 200, 200, 0.3);
+  position: relative;
+}
+.horario p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.horario img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  /**------- contenido -------nav*/
+  .contenido {
+    flex-direction: column;
+  }
+  .imagen-principal {
+    width: 90%;
+  }
+  .content-texto {
+    width: 90%;
+    padding: 20px 0x;
+  }
+  .parrafo {
+    padding: 10px 0;
+  }
+}
