@@ -1,0 +1,10 @@
+:root {
+  --color-titulo: rgb(0, 152, 153);
+  --color-titulo-white: rgb(253, 253, 253);
+  --color-titulo-black: rgb(41, 41, 41);
+  --background-principal: rgb(0, 152, 153);
+  --background-secundario: #007575;
+  --background-white: rgb(254, 254, 254);
+  --background-boxes: rgb(242, 242, 242);
+  --color-hover: rgb(90, 90, 90);
+}

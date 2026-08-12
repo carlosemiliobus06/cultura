@@ -1,0 +1,82 @@
+:root {
+  --color-titulo: rgb(0, 152, 153);
+  --color-titulo-white: rgb(253, 253, 253);
+  --color-titulo-black: rgb(41, 41, 41);
+  --background-principal: rgb(0, 152, 153);
+  --background-secundario: #007575;
+  --background-white: rgb(254, 254, 254);
+  --background-boxes: rgb(242, 242, 242);
+  --color-hover: rgb(90, 90, 90);
+}
+.main {
+  display: grid;
+  grid-template-columns: 70% 30%; /* Una sola columna al 100% */
+  gap: 10px; /* Espacio entre section y aside */
+  padding: 15px;
+  color: var(--color-hover);
+  box-sizing: border-box;
+}
+
+/*=======================================
+    ARCHIVO HISTORICO STYLES
+==================================================*/
+.archivo-historico {
+  margin: 200px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.archivo-historico p {
+  width: 90%;
+}
+.imagen-archivo {
+  width: 80%;
+}
+.imagen-archivo img {
+  width: 80%;
+}
+.imagen-qr {
+  width: 80%;
+}
+.imagen-qr img {
+  width: 80%;
+}
+/*=======================================
+    LETRAS DEL VALLE STYLES
+==================================================*/
+.letras-del-valle {
+  margin: 200px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.content-card {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.card figure img {
+  width: 100px;
+}
+.letras-del-valle a {
+  background-color: var(--background-secundario);
+  padding: 8px 32px;
+  color: var(--color-titulo-white);
+  text-decoration: none;
+  border-radius: 15px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-columns: 100%;
+  }
+}
