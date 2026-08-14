@@ -8,3 +8,116 @@
   --background-boxes: rgb(242, 242, 242);
   --color-hover: rgb(90, 90, 90);
 }
+/*=======================================
+    NOVEDADES STYLES
+==================================================*/
+.contenido-principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  margin: 30px 0px;
+  /*background-color: #e9e9e9;*/
+}
+.contenido-principal h2 {
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  color: var(--color-hover);
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: bold;
+  border-bottom: 1px solid #d6d3d1;
+}
+#contenedor-noticia {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.tarjeta {
+  border: 1px solid #d6d3d1;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 14px;
+  width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-decoration: none;
+  color: var(--color-hover);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.tarjeta small {
+  padding: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.tarjeta h3 {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+/*=======================================
+    LETRAS DEL VALLE STYLES
+==================================================*/
+.contenedor-letras {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.contenedor-letras h2 {
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  color: var(--color-hover);
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: bold;
+  border-bottom: 1px solid #d6d3d1;
+}
+.letras-del-valle {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+.card figure img {
+  width: 250px;
+  margin: 10px;
+}
+.contenedor-letras a {
+  background-color: var(--background-secundario);
+  padding: 8px 40px;
+  color: var(--color-titulo-white);
+  text-decoration: none;
+  border-radius: 15px;
+}
+/*=======================================
+    MOVIL STYLES
+==================================================*/
+@media screen and (max-width: 720px) {
+  /**------- NOVEDADES -------nav*/
+  .tarjeta {
+    width: 80%;
+  }
+  .contenido-principal h2 {
+    padding: 10px 0px;
+    margin: 30px 0;
+  }
+}

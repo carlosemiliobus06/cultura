@@ -1,0 +1,64 @@
+:root {
+  --color-titulo: rgb(0, 152, 153);
+  --color-titulo-white: rgb(253, 253, 253);
+  --color-titulo-black: rgb(41, 41, 41);
+  --background-principal: rgb(0, 152, 153);
+  --background-secundario: #007575;
+  --background-white: rgb(254, 254, 254);
+  --background-boxes: rgb(242, 242, 242);
+  --color-hover: rgb(90, 90, 90);
+}
+
+.main {
+  width: 100%;
+  color: var(--color-hover);
+  display: flex;
+  justify-content: center;
+}
+.main .contenedor-noticia {
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.contenedor-noticia .titulo-noticia {
+  padding: 35px 0;
+  color: var(--color-hover);
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: 900;
+}
+.contenedor-noticia figure img {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 15px;
+}
+.contenedor-noticia small {
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-top: 1px solid #d6d3d1;
+  border-bottom: 1px solid #d6d3d1;
+  margin: 10px 0;
+}
+#contenido-noticia {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 16px 0;
+  text-align: justify;
+  white-space: pre-line;
+}
+@media screen and (max-width: 720px) {
+  .contenedor-noticia figure img {
+    width: 100%;
+  }
+  .contenedor-noticia {
+    width: 90%;
+  }
+  #contenido-noticia {
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "13 de agosto, nuevo aniversario del volcan Hudson",
+      "description": "El Hudson entra en erupción sorpresivamente el 8 de agosto de 1991, manteniendo una violenta actividad durante 1 semana y permaneciendo activo hasta el 29 de diciembre de ese año. La explosión fue acompañada por intensas tormentas eléctricas, lluvias torrenciales y un enorme volumen de material volcánico arrojado desde el interior de la tierra hacia la atmósfera. Los fuertes vientos en dirección Sur-este, arrastraron la ceniza incluso hasta la zona costera de la provincia de Santa Cruz. \n\n\n\n Las manifestaciones de la erupción llegaron hasta Perito Moreno sorprendiendo y atemorizando a la población, al no tener en un primer momento, conocimiento de lo que estaba sucediendo. El lunes 12 de agosto al atardecer se comenzó a percibir un olor a azufre en el aire, seguido de resplandores en el horizonte de la Cordillera de los Andes. A la medianoche comenzaba a caer una copiosa lluvia de ceniza que se mantendría hasta la madrugada. Finalmente, el jueves 15 de agosto en horas del mediodía se produce en la zona un oscurecimiento total debido al paso de una gran nube de ceniza sobre el lugar. La ceniza volcánica había cambiado completamente el paisaje y la vida de los pobladores de la zona. El polvo volcánico había alcanzado los 12 cm de espesor en Perito Moreno, llegando a acumularse hasta 1 metro de altura en el valle cercano al Volcán. \n\n\n\n Los primeros días la vida cotidiana del pueblo cambió radicalmente. La gente en la calle debió protegerse de la ceniza volcánica con bufandas, anteojos de sol, antiparras, máscaras y barbijos. Las instituciones y los colegios cerraron sus puertas. Se recomendó a la población permanecer en sus casas y sellar completamente las ventanas y aberturas que dieran al exterior.",
+      "date": "12-08-2026",
+      "urlToImage": "assets/img/noticia/Volcan Hudson/55244814341_cc2f1ec3d4_b.jpg",
+      "url": "noticia.html?id=1"
+    },
+    {
+      "id": 2,
+      "title": "Músicos peritenses, el evento se realozará el 14 de agosto",
+      "description": "",
+      "date": "12-08-2026",
+      "urlToImage": "assets/img/noticia/Musicos-peritenses2.jpg",
+      "url": "noticia.html?id=2"
+    },
+    {
+      "id": 3,
+      "title": "Concurso de dibujos, cierre del concurso es el 18 de agosto",
+      "description": "Tema: Dibujar una escena histórica (al General, el cruce, los caballos, el granadero) o representar un valor sanmartiniano en la actualidad. \n Edad: de 6 a 12 años. \n Técnica: LIBRE (lápices de colores, marcadores, temperas, collage). \n Soporte: Hoja A4. \n En el dorsal debe figurar: Nombre y Apellido del participante, edad, teléfono de contacto de la familia y el título de la obra. \n\n\n\n PLAZOS\n Fecha límite: 18 de agosto. \n Anuncio de ganadores: 20 de agosto. \n Entrega de premios: 21 de agosto.",
+      "date": "12-08-2026",
+      "urlToImage": "assets/img/noticia/dibujo1.jpg",
+      "url": "noticia.html?id=3"
+    }
+  ]
+}

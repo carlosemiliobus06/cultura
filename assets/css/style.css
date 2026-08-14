@@ -35,7 +35,7 @@ body,
   font-size: 1em;
   /*overflow-x: hidden;*/
   scroll-behavior: smooth !important;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 h1,
@@ -175,13 +175,26 @@ p {
   color: var(--color-titulo-white) !important;
 }
 /*=======================================
+    MAIN STYLES
+==================================================*/
+.main {
+  width: 90%; /* Una sola columna al 100% */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: auto;
+  color: var(--color-hover);
+  box-sizing: border-box;
+}
+/*=======================================
     FOOTER STYLES
 ==================================================*/
 .footer {
   width: 100%;
-  background-color: #285bcf;
-  min-height: 120px;
-  padding: 20px 0;
+  background-color: #666666;
+  /*min-height: 120px;*/
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,11 +229,13 @@ p {
   opacity: 1;
 }
 .footer .text-footer {
+  width: 100%;
+  padding: 20px;
   color: var(--color-titulo-white);
   text-align: center;
-  margin: 15px;
-  margin-bottom: 10px;
   font-size: 1.2rem;
+  margin-top: 10px;
+  background-color: #181818;
 }
 /*=======================================
     MEDIAQUERIS STYLES
@@ -277,7 +292,7 @@ p {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 60%;
+    width: 80%;
     height: 100dvh;
     background-color: #1c1c1c;
     padding: 2rem;
@@ -320,6 +335,10 @@ p {
   .navbar.visible {
     opacity: 1;
     visibility: visible;
+  }
+  /**------- tablet y movil main -------*/
+  .main {
+    width: 100%;
   }
   /**------- tablet y movil footer -------*/
   .menu-footer li a {

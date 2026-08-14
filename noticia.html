@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cultura</title>
+    <title>Noticia</title>
     <!-- NORMALIZE STYLE CSS -->
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <!-- BOOTSTRAP ICON STYLE CSS -->
@@ -18,6 +18,8 @@
     />
     <!-- GENERAL STYLE CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- NOTICIA STYLE CSS -->
+     <link rel="stylesheet" href="assets/css/pages/noticia.css">
   </head>
   <body>
     <!-- ----- HEADER ----- -->
@@ -29,10 +31,20 @@
           <p>PERITO MORENO</p>
         </div>
         <div class="social">
-          <a id="facebook" class="icon" href="https://www.facebook.com/cultura.peritomorenosantacruz" target="_blank">
+          <a
+            id="facebook"
+            class="icon"
+            href="https://www.facebook.com/cultura.peritomorenosantacruz"
+            target="_blank"
+          >
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a id="youtube" class="icon" href="https://www.youtube.com/@CulturaPeritoMoreno" target="_blank">
+          <a
+            id="youtube"
+            class="icon"
+            href="https://www.youtube.com/@CulturaPeritoMoreno"
+            target="_blank"
+          >
             <i class="fa-brands fa-youtube"></i>
           </a>
         </div>
@@ -54,21 +66,37 @@
           </button>
           <ul class="item-nav">
             <li class="nav-link">
-              <a href="index.html">INICIO</a>
+              <a class="active" href="index.html">INICIO</a>
             </li>
-            <li class="nav-link"><a class="active" href="cultura.html">CULTURA</a></li>
+            <li class="nav-link"><a href="cultura.html">CULTURA</a></li>
             <li class="nav-link"><a href="patrimonio.html">PATRIMONIO</a></li>
-            <li class="nav-link"><a href="archivo.html">ARCHIVO HISTORICO</a></li>
+            <li class="nav-link">
+              <a href="archivo.html">ARCHIVO HISTORICO</a>
+            </li>
             <li class="nav-link"><a href="biblioteca.html">BIBLIOTECA</a></li>
             <li class="nav-link"><a href="auditorio.html">AUDITORIO</a></li>
-            <li class="nav-link"><a href="extension.html">EXTENSIÓN CULTURAL</a></li>
-            <li class="nav-link"><a href="letras.html">LETRAS DEL VALLLE</a></li>
+            <li class="nav-link">
+              <a href="extension.html">EXTENSIÓN CULTURAL</a>
+            </li>
+            <li class="nav-link">
+              <a href="letras.html">LETRAS DEL VALLLE</a>
+            </li>
           </ul>
           <div class="social2">
-            <a id="facebook" class="icon" href="https://www.facebook.com/cultura.peritomorenosantacruz" target="_blank">
+            <a
+              id="facebook"
+              class="icon"
+              href="https://www.facebook.com/cultura.peritomorenosantacruz"
+              target="_blank"
+            >
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a id="youtube" class="icon" href="https://www.youtube.com/@CulturaPeritoMoreno" target="_blank">
+            <a
+              id="youtube"
+              class="icon"
+              href="https://www.youtube.com/@CulturaPeritoMoreno"
+              target="_blank"
+            >
               <i class="fa-brands fa-youtube"></i>
             </a>
           </div>
@@ -76,6 +104,17 @@
       </div>
     </nav>
 
+    <!-- ------- MAIN ------- -->
+    <main class="main">
+        <div id="contenedor-noticia" class="contenedor-noticia">
+          <h2 id="titulo-noticia" class="titulo-noticia">Cargando...</h2>
+          <small id="fecha"></small>
+          <figure>
+            <img id="portada" src="" alt="">
+          </figure>
+          <p id="contenido-noticia"></p>
+        </div>
+    </main>
 
     <!-- ------- FOOTER ------- -->
     <footer class="footer">
@@ -89,16 +128,20 @@
         <li><a href="biblioteca.html">Biblioteca</a></li>
         <li><a href="auditorio.html">Auditorio</a></li>
         <li><a href="extension.html">Extensión Cultural</a></li>
-        <li><a href="letras.html">Leltras Del Valle</a></li>
+        <li><a href="letras.html">Letras Del Valle</a></li>
       </ul>
       <div class="text-footer">
         <p >&#169 2026 | Todos los derechos reservados</p>
       </div>
     </footer>
+      
+      
 
-    <!-- FONT AWESOME ICON STYLE JS -->
-    <script src="assets/plugins/fontawesome-free-7.3.1-web/js/all.js"></script>
     <!-- GENERAL JS -->
     <script src="assets/js/main.js"></script>
+    <!-- DETALLES JS -->
+    <script src="assets/js/pages/detalles.js"></script>
+    <!-- FONT AWESOME ICON STYLE JS -->
+    <script src="assets/plugins/fontawesome-free-7.3.1-web/js/all.js"></script>
   </body>
 </html>
