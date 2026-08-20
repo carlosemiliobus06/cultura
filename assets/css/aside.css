@@ -14,7 +14,7 @@
 ==================================================*/
 .contenido-secundario {
   width: 100%;
-  max-height: 190px;
+  height: auto;
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -23,14 +23,19 @@
 .archivo-historico {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
   background-color: #f54927;
   color: var(--color-titulo-white);
-  padding: 10px;
+  padding: 20px;
 }
-
+.content-archivo {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .archivo-historico h2 {
   width: 15%;
   text-align: center;
@@ -44,8 +49,14 @@
 .imagen-archivo img {
   height: 90px;
 }
+.logo-archivo {
+  width: 20%;
+}
 .logo-archivo img {
   height: 70px;
+}
+.archivo-historico .content-btn {
+  width: 20%;
 }
 .archivo-historico .btn-archivo {
   color: var(--color-titulo-white);
@@ -55,27 +66,67 @@
   border-radius: 40px;
   font-size: 0.9rem;
 }
-@media screen and (max-width: 768px) {
-  /*=======================================
-    ARCHIVO HISTORICO STYLES
+/*=======================================
+  ARCHIVO HISTORICO STYLES
 ==================================================*/
+@media screen and (min-width: 768px) and (max-width: 900px) {
   .imagen-archivo img {
-    height: 40px;
+    height: 70px;
   }
   .logo-archivo img {
-    height: 30px;
+    height: 50px;
   }
   .archivo-historico h2 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     width: 18%;
     text-align: center;
   }
   .archivo-historico p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     width: 25%;
   }
   .archivo-historico .btn-archivo {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+    padding: 6px 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .archivo-historico {
+    flex-flow: column nowrap;
+    gap: 15px;
+  }
+  .logo-archivo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .archivo-historico .content-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-archivo {
+    width: 100%;
+  }
+  .imagen-archivo img {
+    height: 70px;
+  }
+  .logo-archivo img {
+    height: 50px;
+  }
+  .archivo-historico h2 {
+    font-size: 0.8rem;
+    width: 18%;
+    text-align: center;
+  }
+  .archivo-historico p {
+    font-size: 0.7rem;
+    width: 25%;
+  }
+  .archivo-historico .btn-archivo {
+    font-size: 0.6rem;
     padding: 6px 16px;
   }
 }
