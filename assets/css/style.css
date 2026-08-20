@@ -247,15 +247,15 @@ p {
   }
   .nav .content-nav {
     width: 90%;
-    height: 61px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
   }
-  .linea-vertical2 {
-    border-left: 3px solid var(--color-hover); /* Grosor, estilo y color de la línea */
-    height: 44px; /* Altura de la línea */
-    margin: 0 10px; /* Espacio alrededor */
-  }
+  /*.linea-vertical2 {*/
+  /*border-left: 3px solid var(--color-hover);  Grosor, estilo y color de la línea */
+  /*height: 44px;  Altura de la línea */
+  /*margin: 0 10px;  Espacio alrededor */
+  /*}*/
   .content-nav .content-logo2 {
     height: 100%;
     display: flex;
@@ -274,6 +274,7 @@ p {
   }
   .content-nav .content-logo2 img {
     height: 100%;
+    padding: 10px;
   }
   .content-nav .abrir-nav {
     display: block;
