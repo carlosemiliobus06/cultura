@@ -15,14 +15,14 @@ fetch(url)
 
     if (noticiaEncontrada) {
       // 3. Mostrar los datos en el HTML
-      document.getElementById("titulo-noticia").innerText =
+      document.getElementById("titulo-noticia").innerHTML =
         noticiaEncontrada.title;
       document.getElementById("portada").src = noticiaEncontrada.urlToImage;
-      document.getElementById("fecha").innerText = noticiaEncontrada.date;
-      document.getElementById("contenido-noticia").innerText =
+      document.getElementById("fecha").innerHTML = noticiaEncontrada.date;
+      document.getElementById("contenido-noticia").innerHTML =
         noticiaEncontrada.description;
     } else {
-      document.getElementById("titulo-noticia").innerText =
+      document.getElementById("titulo-noticia").innerHTML =
         "Noticia no encontrada";
     }
   })
