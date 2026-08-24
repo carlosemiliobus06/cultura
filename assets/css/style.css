@@ -178,7 +178,7 @@ p {
     MAIN STYLES
 ==================================================*/
 .main {
-  width: 90%; /* Una sola columna al 100% */
+  width: 100%; /* Una sola columna al 100% */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center !important;
