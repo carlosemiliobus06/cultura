@@ -76,8 +76,8 @@ p {
   font-size: 0.9rem;
 }
 .header .content-logo img {
-  height: 80px;
-  padding: 5px;
+  height: 100px;
+  padding: 17px;
 }
 .linea-vertical {
   border-left: 3px solid #fff; /* Grosor, estilo y color de la línea */
