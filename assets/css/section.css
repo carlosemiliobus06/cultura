@@ -9,6 +9,26 @@
   --color-hover: rgb(90, 90, 90);
 }
 /*=======================================
+    GENERAL STYLES
+==================================================*/
+/**  titulos funciona para noticias y letras del valle */
+.content-titulo h2 {
+  font-size: 1rem;
+  margin: 15px 0;
+  color: #b46d12;
+}
+.content-titulo h3 {
+  font-size: 1.7rem;
+  margin: 15px 0;
+}
+.content-text {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding: 13px;
+}
+
+/*=======================================
     NOVEDADES STYLES
 ==================================================*/
 .contenido-principal {
@@ -25,27 +45,17 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: end;
   flex-flow: row wrap;
   gap: 4px;
+  margin-bottom: 27px;
 }
 .container-title-noticia .content-titulo {
-  padding: 10px;
-}
-.content-titulo h2 {
-  font-size: 1rem;
-  margin: 15px 0;
-  color: #b46d12;
-}
-.content-titulo h3 {
-  font-size: 1.7rem;
-  margin: 15px 0;
-}
-.content-text-noticia {
-  width: 30%;
   display: flex;
-  align-items: center;
-  padding: 13px;
+  flex-direction: column;
+  justify-content: end;
 }
+
 #contenedor-noticia {
   width: 100%;
   height: auto;
@@ -104,19 +114,17 @@
   gap: 20px;
   padding: 10px;
 }
-
-.contenedor-letras h2 {
-  width: 80%;
-  text-align: center;
-  padding: 10px;
-  margin: 30px;
-  color: var(--color-hover);
-  font-size: clamp(1.7rem, 4vw, 2.5rem);
-  font-weight: bold;
-  border-bottom: 1px solid #d6d3d1;
+.container-title-letras {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-flow: row wrap;
+  gap: 4px;
+  margin-bottom: 27px;
 }
 .letras-del-valle {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -124,9 +132,30 @@
   margin: 10px;
   gap: 10px;
 }
+.card {
+  border: 1px solid #d6d3d1;
+  background-color: #fff;
+  border-radius: 13px;
+  width: 270px;
+  height: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-decoration: none;
+  color: var(--color-hover);
+  overflow: hidden;
+}
 .card figure img {
-  width: 250px;
-  margin: 10px;
+  width: 100%;
+}
+.card .card-content {
+  width: 100%;
+  padding: 12px;
+}
+.card-content h2 {
+  padding: 5px;
+}
+.card-content p {
+  padding: 5px;
 }
 .contenedor-letras a {
   background-color: var(--background-secundario);
