@@ -41,7 +41,7 @@
   margin: 30px 0px;
   background-color: #f3efe5;
 }
-.container-title-noticia {
+.contenido-principal .container-title-noticia {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -79,7 +79,7 @@
   overflow: hidden;
 }
 .tarjeta small {
-  padding: 13px;
+  padding: 10px;
   font-size: 0.7rem;
   font-weight: bold;
 }
@@ -90,7 +90,7 @@
 }
 .tarjeta h3 {
   font-size: 1.2rem;
-  padding: 12px;
+  padding: 10px;
 }
 .btn-vermas {
   padding: 10px 18px;
@@ -143,6 +143,7 @@
   text-decoration: none;
   color: var(--color-hover);
   overflow: hidden;
+  margin: 10px;
 }
 .card figure img {
   width: 100%;
@@ -170,18 +171,15 @@
 @media screen and (max-width: 720px) {
   /**------- NOVEDADES -------nav*/
   .tarjeta {
-    width: 80%;
-    box-shadow: none;
+    width: 95%;
   }
   .contenido-principal h2 {
     padding: 10px 0px;
     margin: 30px 0;
   }
-  .content-text-noticia {
+  .content-text {
     width: 100%;
-    justify-content: end;
-    align-items: center;
-    padding: 13px;
+    padding: 0px;
     margin-bottom: 13px;
   }
   .content-titulo h2 {
