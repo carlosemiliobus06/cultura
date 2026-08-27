@@ -31,19 +31,25 @@ function desplegarNoticias(listaArticulos) {
   contenedor.innerHTML = "";
 
   // 2. Iterar sobre cada objeto noticia del archivo JSON
-  /*listaArticulos.forEach((noticia) => {
+  listaArticulos.forEach((noticia) => {
+    // texto corto para tarjeta
+    const textoCorto = noticia.description.substring(0, 100);
+
     // 3. Crear el diseño de la tarjeta usando los datos exactos del JSON
     const tarjeta = `
-      <a href="${noticia.url}" class="tarjeta">
+      <div class="tarjeta">
         <img src="${noticia.urlToImage}" alt="${noticia.title}">
-        <small>${noticia.date}</small>
+        <small><i class="fa-regular fa-calendar"></i> ${noticia.date}</small>
         <h3>${noticia.title}</h3>
-      </a>
+        <p>${textoCorto}...</p>
+        <a class="btn-mas" href="${noticia.url}">Leer más <i class="fa-solid fa-arrow-right-long" style="font-size: 12px;"></i></a>
+      </div>
     `;
     // 4. Inyectar la tarjeta al contenedor
     contenedor.innerHTML += tarjeta;
-  });*/
+  });
 
+  /*
   let html = `
       <a href="${noticiaPrincipal.url}" class="tarjeta noticia-principal">
         <img src="${noticiaPrincipal.urlToImage}" alt="${noticiaPrincipal.title}">
@@ -61,11 +67,11 @@ function desplegarNoticias(listaArticulos) {
           <h3>${noticia.title}</h3>
         </a>
         `;
-  });
+  });*/
 
   //html += `</div>`; // Cerrar el contenedor del bloque secundario
   // 7. Inyectar todo el HTML construido en la página
-  contenedor.innerHTML = html;
+  //contenedor.innerHTML = html;
 }
 
 // Ejecutar la función automáticamente cuando cargue la página

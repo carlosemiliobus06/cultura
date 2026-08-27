@@ -71,14 +71,16 @@
   background-color: #fff;
   border-radius: 13px;
   width: 27%;
+  height: 440px;
   display: flex;
   flex-flow: column nowrap;
   text-decoration: none;
   color: var(--color-hover);
   overflow: hidden;
+  position: relative;
 }
 .tarjeta small {
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 0.7rem;
   font-weight: bold;
 }
@@ -89,7 +91,22 @@
 }
 .tarjeta h3 {
   font-size: 1.2rem;
-  padding: 10px;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+.tarjeta p {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+}
+.tarjeta a {
+  text-decoration: none;
+  color: #b46d12;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0; /* Lo pega totalmente al borde inferior */
+  left: 0; /* Opcional: para alinear a la izquierda */
+  width: 100%;
 }
 .btn-vermas {
   padding: 10px 18px;
