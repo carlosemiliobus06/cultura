@@ -38,8 +38,7 @@
   justify-content: center;
   align-items: center;
   padding: 30px 0px;
-  margin: 30px 0px;
-  background-color: #f3efe5;
+  background-color: #fff;
 }
 .contenido-principal .container-title-noticia {
   width: 90%;
@@ -105,7 +104,6 @@
     LETRAS DEL VALLE STYLES
 ==================================================*/
 .contenedor-letras {
-  margin: 30px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -113,6 +111,7 @@
   align-items: center;
   gap: 20px;
   padding: 10px;
+  background-color: #e6ffff;
 }
 .container-title-letras {
   width: 90%;
@@ -164,6 +163,7 @@
   color: var(--color-titulo-white);
   text-decoration: none;
   border-radius: 7px;
+  margin-bottom: 60px;
 }
 /*=======================================
     MOVIL STYLES

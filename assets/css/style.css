@@ -192,7 +192,7 @@ p {
 ==================================================*/
 .footer {
   width: 100%;
-  background-color: #666666;
+  background-color: #004747;
   /*min-height: 120px;*/
   padding-top: 20px;
   display: flex;
@@ -235,7 +235,7 @@ p {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 10px;
-  background-color: #181818;
+  background-color: #001a1a;
 }
 /*=======================================
     MEDIAQUERIS STYLES
