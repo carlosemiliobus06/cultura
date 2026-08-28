@@ -245,6 +245,7 @@ p {
   #header {
     display: none;
   }
+
   .nav .content-nav {
     width: 90%;
     height: 70px;
@@ -267,11 +268,7 @@ p {
     font-weight: bold;
     color: var(--background-principal);
   }
-  .linea-vertical2 {
-    border-left: 3px solid var(--background-principal); /* Grosor, estilo y color de la línea */
-    height: 50px; /* Altura de la línea */
-    margin: 0 10px; /* Espacio alrededor */
-  }
+
   .content-nav .content-logo2 img {
     height: 100%;
     padding: 10px;
