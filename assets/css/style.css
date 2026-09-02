@@ -51,9 +51,14 @@ p {
     HEADER STYLES
 ==================================================*/
 .header {
-  background-color: var(--background-principal);
+  /*background-color: var(--background-principal);*/
+  background-image: url(../img/edmundo-dibujo.jpg);
+  background-position: right;
+  background-size: 350px;
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 250px;
+  /*height: auto;*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -76,7 +81,7 @@ p {
   font-size: 0.9rem;
 }
 .header .content-logo img {
-  height: 100px;
+  height: 140px;
   padding: 17px;
 }
 .linea-vertical {
@@ -98,7 +103,8 @@ p {
   padding: 7px;
   border-radius: 5%;
   color: var(--color-titulo-white);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 152, 153, 1);
+  /*background-color: rgba(255, 255, 255, 0.2);*/
   border: 1px solid #d6d3d1;
 }
 .header .social .icon i {
@@ -111,7 +117,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--background-white);
+  background-color: var(--background-principal);
   width: 100%;
   height: 61px;
   display: flex;
@@ -159,7 +165,7 @@ p {
   text-align: center;
   font-weight: bold;
   font-size: 0.8em;
-  color: var(--color-hover);
+  color: var(--color-titulo-white);
   padding: 0 13px;
   display: flex;
   align-items: center;
@@ -171,8 +177,10 @@ p {
   color: var(--color-titulo-white) !important;
 }
 .active {
-  background-color: var(--background-principal);
-  color: var(--color-titulo-white) !important;
+  /*background-color: var(--background-principal);
+  color: var(--color-titulo-white) !important;*/
+  background-color: var(--background-white);
+  color: var(--color-hover) !important;
 }
 /*=======================================
     MAIN STYLES
@@ -280,6 +288,9 @@ p {
     border: none;
     font-size: 1.7em;
     background-color: #fff;
+  }
+  .nav {
+    background-color: var(--background-white);
   }
   .nav .navbar {
     opacity: 0;

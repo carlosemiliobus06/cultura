@@ -1,7 +1,7 @@
 /** slider banner */
 setInterval(() => {
   moveToRight();
-}, 5000);
+}, 8000);
 
 const btnLeft = document.querySelector("#left"),
   btnRight = document.querySelector("#right"),
