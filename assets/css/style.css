@@ -123,7 +123,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #d6d3d1;
+  border-bottom: 5px solid #fff;
 }
 .nav .content-nav {
   width: 90%;
@@ -248,8 +248,105 @@ p {
 /*=======================================
     MEDIAQUERIS STYLES
 ==================================================*/
+@media screen and (max-width: 870px) {
+  #header {
+    display: none;
+  }
+
+  .nav .content-nav {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /*.linea-vertical2 {*/
+  /*border-left: 3px solid var(--color-hover);  Grosor, estilo y color de la línea */
+  /*height: 44px;  Altura de la línea */
+  /*margin: 0 10px;  Espacio alrededor */
+  /*}*/
+  .content-nav .content-logo2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-nav .content-logo2 p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--background-principal);
+  }
+
+  .content-nav .content-logo2 img {
+    height: 100%;
+    padding: 10px;
+  }
+  .content-nav .abrir-nav {
+    display: block;
+    position: relative;
+    right: 0;
+    border: none;
+    font-size: 1.7em;
+    background-color: #fff;
+  }
+  .nav {
+    background-color: var(--background-white);
+  }
+  .nav .navbar {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 100dvh;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .navbar .social2 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+  }
+  .social2 .icon {
+    padding: 7px;
+    border-radius: 5%;
+    color: var(--color-titulo-white);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #d6d3d1;
+  }
+  .navbar .item-nav {
+    height: auto;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+    gap: 2em;
+  }
+  .navbar .item-nav .nav-link a {
+    padding: 10px;
+    color: var(--color-titulo-white);
+  }
+  .navbar .cerrar-nav {
+    display: block;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #1c1c1c;
+    color: var(--color-titulo-white);
+  }
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 @media screen and (max-width: 720px) {
-  /**------- tablet y movil -------nav*/
+  /**------- tablet y movil nav-------*/
   #header {
     display: none;
   }
